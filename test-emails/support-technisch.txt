@@ -1,0 +1,20 @@
+Betreff: DRINGEND: Produktionssystem ausgefallen - sofortige Hilfe benötigt
+
+Guten Morgen,
+
+unser KI-gestütztes Dokumentenverarbeitungssystem, das Sie für uns implementiert haben, ist seit heute Nacht 02:15 Uhr nicht mehr erreichbar. Der AWS Lambda-Service wirft folgende Fehlermeldung:
+
+"Task timed out after 30.00 seconds"
+
+Betroffen sind alle 3 Standorte. Wir können keine Eingangsrechnungen mehr verarbeiten - aktuell stauen sich bereits 847 unbearbeitete Dokumente auf. Das System läuft produktiv seit 6 Monaten ohne Probleme.
+
+Letzte Änderung war gestern ein Deployment auf Version 2.3.1.
+
+Können Sie sich bitte sofort einloggen und das Problem analysieren? Wir haben ab 08:00 Uhr unser Tagesgeschäft und benötigen das System spätestens bis dahin.
+
+CloudWatch Logs: https://eu-central-1.console.aws.amazon.com/cloudwatch/ (Zugangsdaten bekannt)
+
+Mit freundlichen Grüßen
+Markus Schneider
+IT-Leiter | Maschinenbau König GmbH & Co. KG
+Tel: +49 711 88990-42 (Mobilnummer: +49 172 3341205)

@@ -1,0 +1,23 @@
+Betreff: Initiativbewerbung als Cloud Engineer / DevOps
+
+Sehr geehrter Herr Bojatschkin,
+
+mein Name ist Julia Krause, ich bin seit 5 Jahren als Cloud Engineer tätig
+und habe Ihren Vortrag auf der AWS Community Day in München gesehen.
+
+Kurzprofil:
+- B.Sc. Informatik (TU München)
+- 5 Jahre Erfahrung mit AWS (zertifiziert: Solutions Architect Professional)
+- Terraform, Kubernetes, CI/CD mit GitHub Actions
+- Aktuell bei einem Konzern, suche aber den Wechsel in ein dynamischeres Umfeld
+
+Ich sehe, dass Sie als Freelancer arbeiten, aber falls Sie in Zukunft
+Unterstützung für Kundenprojekte suchen oder ein Team aufbauen, würde ich
+mich sehr über ein Gespräch freuen.
+
+Meinen Lebenslauf habe ich als PDF angehängt.
+
+Beste Grüße
+Julia Krause
+julia.krause@example.de | +49 176 12345678
+LinkedIn: linkedin.com/in/julia-krause-example

@@ -1,0 +1,25 @@
+Betreff: Evaluierung KI-gestützte Dokumentenverarbeitung für unser Haus
+
+Sehr geehrter Herr Bojatschkin,
+
+ich bin CTO der Bayerische Logistik Gruppe (ca. 800 Mitarbeiter, 3 Standorte).
+Wir stehen vor der Herausforderung, dass unser Shared-Service-Center monatlich
+ca. 4.000 Eingangsrechnungen manuell verarbeitet.
+
+Im Rahmen unserer Digitalisierungsstrategie 2026/27 evaluieren wir aktuell
+Lösungen für KI-gestützte Dokumentenverarbeitung. Ihr Blogbeitrag zur
+PDF-Rechnungsverarbeitung mit AWS Textract hat unser Interesse geweckt.
+
+Konkret interessiert uns:
+1. Machbarkeit einer Pilotphase (3 Monate) mit unserem SAP S/4HANA
+2. Anbindung an unser bestehendes DMS (d.velop)
+3. Grober Kostenrahmen für Pilot + Rollout
+
+Können wir einen Termin für ein 30-minütiges Erstgespräch vereinbaren?
+Nächste Woche Dienstag oder Mittwoch ab 14:00 Uhr wäre ideal.
+
+Mit freundlichen Grüßen
+Dr. Andreas Bergmann
+CTO | Bayerische Logistik Gruppe
+Tel: +49 89 7777-100
+andreas.bergmann@blg-logistics.example.de

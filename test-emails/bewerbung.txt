@@ -1,0 +1,21 @@
+Betreff: Initiativbewerbung als Cloud Engineer
+
+Sehr geehrte Damen und Herren,
+
+mein Name ist Lisa Weber und ich bin erfahrene Cloud Engineer mit
+5 Jahren Erfahrung in AWS und Azure. Ihr Unternehmen hat mich durch
+Ihre spannenden Projekte im KI-Bereich auf LinkedIn aufmerksam gemacht.
+
+Ich würde mich sehr freuen, Teil Ihres Teams zu werden. Im Anhang
+finden Sie meinen Lebenslauf und relevante Zertifizierungen:
+- AWS Solutions Architect Professional
+- Kubernetes Administrator (CKA)
+- Terraform Associate
+
+Über eine Einladung zum persönlichen Gespräch würde ich mich freuen.
+
+Mit freundlichen Grüßen
+Lisa Weber
+Tel: +49 176 12345678
+E-Mail: lisa.weber@email.de
+LinkedIn: linkedin.com/in/lisaweber

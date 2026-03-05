@@ -1,0 +1,179 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BedrockInference",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream",
+        "bedrock:ListFoundationModels",
+        "bedrock:GetFoundationModel"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "S3DemoWorkspace",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:GetObjectTagging",
+        "s3:PutObjectTagging"
+      ],
+      "Resource": [
+        "arn:aws:s3:::bojatschkin-*",
+        "arn:aws:s3:::bojatschkin-*/*",
+        "arn:aws:s3:::n8n-demo-*",
+        "arn:aws:s3:::n8n-demo-*/*"
+      ]
+    },
+    {
+      "Sid": "S3ListAllBuckets",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "LambdaInvokeAndRead",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:InvokeFunction",
+        "lambda:GetFunction",
+        "lambda:ListFunctions",
+        "lambda:GetFunctionConfiguration"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudFormationReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:DescribeStacks",
+        "cloudformation:DescribeStackResources",
+        "cloudformation:ListStacks",
+        "cloudformation:GetTemplate",
+        "cloudformation:DescribeStackEvents"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudFrontInvalidation",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:CreateInvalidation",
+        "cloudfront:GetInvalidation",
+        "cloudfront:ListInvalidations",
+        "cloudfront:GetDistribution",
+        "cloudfront:ListDistributions"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "TextractFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "textract:AnalyzeDocument",
+        "textract:DetectDocumentText",
+        "textract:StartDocumentAnalysis",
+        "textract:GetDocumentAnalysis",
+        "textract:StartDocumentTextDetection",
+        "textract:GetDocumentTextDetection"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SESEmailSending",
+      "Effect": "Allow",
+      "Action": [
+        "ses:SendEmail",
+        "ses:SendRawEmail",
+        "ses:GetSendStatistics",
+        "ses:ListIdentities"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SQSMessaging",
+      "Effect": "Allow",
+      "Action": [
+        "sqs:SendMessage",
+        "sqs:ReceiveMessage",
+        "sqs:DeleteMessage",
+        "sqs:GetQueueAttributes",
+        "sqs:GetQueueUrl",
+        "sqs:ListQueues"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SNSPublish",
+      "Effect": "Allow",
+      "Action": [
+        "sns:Publish",
+        "sns:ListTopics",
+        "sns:GetTopicAttributes"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchLogsRead",
+      "Effect": "Allow",
+      "Action": [
+        "logs:GetLogEvents",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SSMParameterRead",
+      "Effect": "Allow",
+      "Action": [
+        "ssm:GetParameter",
+        "ssm:GetParameters",
+        "ssm:GetParametersByPath"
+      ],
+      "Resource": [
+        "arn:aws:ssm:*:*:parameter/n8n/*",
+        "arn:aws:ssm:*:*:parameter/bojatschkin/*"
+      ]
+    },
+    {
+      "Sid": "DenySecurityCritical",
+      "Effect": "Deny",
+      "Action": [
+        "iam:*",
+        "organizations:*",
+        "account:*",
+        "billing:*",
+        "budgets:ModifyBudget",
+        "budgets:DeleteBudget",
+        "cloudtrail:DeleteTrail",
+        "cloudtrail:StopLogging",
+        "cloudtrail:UpdateTrail",
+        "guardduty:DeleteDetector",
+        "guardduty:DisassociateFromMasterAccount",
+        "securityhub:DeleteHub",
+        "kms:DeleteImportedKeyMaterial",
+        "kms:ScheduleKeyDeletion",
+        "kms:DisableKey",
+        "ec2:TerminateInstances",
+        "rds:DeleteDBInstance",
+        "rds:DeleteDBCluster",
+        "dynamodb:DeleteTable",
+        "s3:DeleteBucket",
+        "s3:DeleteBucketPolicy",
+        "cloudformation:DeleteStack",
+        "sts:AssumeRole"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

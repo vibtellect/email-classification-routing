@@ -1,0 +1,23 @@
+Betreff: Rechnung Nr. INV-2026-0891 — n8n Cloud Pro Plan — März 2026
+
+Guten Tag,
+
+anbei Ihre monatliche Rechnung für den n8n Cloud Pro Plan.
+
+Rechnungsdetails:
+- Rechnungsnummer: INV-2026-0891
+- Zeitraum: 01.03.2026 — 31.03.2026
+- Plan: Pro (10.000 Executions)
+- Nettobetrag: 46,00 EUR
+- USt. (19%): 8,74 EUR
+- Bruttobetrag: 54,74 EUR
+
+Die Rechnung als PDF finden Sie im Anhang und in Ihrem Billing-Dashboard
+unter https://app.n8n.cloud/billing/invoices.
+
+Der Betrag wird wie vereinbart per SEPA-Lastschrift eingezogen.
+
+Bei Fragen wenden Sie sich an billing@n8n.io.
+
+Freundliche Grüße
+n8n Billing Team

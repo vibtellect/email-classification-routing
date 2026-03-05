@@ -1,0 +1,17 @@
+Betreff: Kooperationsanfrage - KI-Integration für unsere Kunden
+
+Sehr geehrter Herr Bojatschkin,
+
+mein Name ist Stefan Krause, ich bin Geschäftsführer der KRAUSE IT Solutions GmbH (Hannover). Wir sind ein Microsoft-Partner mit ca. 45 Mitarbeitern und betreuen überwiegend mittelständische Kunden im Raum Niedersachsen/Bremen.
+
+Immer mehr unserer Kunden fragen nach KI-gestützten Lösungen, speziell im Bereich Dokumentenverarbeitung und Prozessautomatisierung. Das ist nicht unser Kerngeschäft, und wir möchten hier nicht selbst investieren.
+
+Ich habe Ihre Blogbeiträge zu AWS Bedrock und n8n-Automatisierung gelesen und denke, dass eine Zusammenarbeit für beide Seiten interessant sein könnte: Wir bringen die Kundenbeziehungen und das Projektmanagement, Sie bringen das KI-Implementierungs-Know-how.
+
+Haben Sie Interesse an einem unverbindlichen Gespräch über mögliche Kooperationsmodelle (Subunternehmer, Referral, White-Label)?
+
+Mit freundlichen Grüßen
+Stefan Krause
+Geschäftsführer | KRAUSE IT Solutions GmbH
+Tel: +49 511 76540-0
+stefan.krause@krause-it.example.de

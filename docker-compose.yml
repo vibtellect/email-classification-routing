@@ -1,0 +1,61 @@
+version: '3.9'
+
+services:
+  n8n:
+    image: n8nio/n8n:1.76.1
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      # n8n Core Config
+      - N8N_BASIC_AUTH_ACTIVE=false
+      - N8N_DEFAULT_BINARY_DATA_MODE=filesystem
+      - EXECUTIONS_DATA_PRUNE=true
+      - GENERIC_TIMEZONE=Europe/Berlin
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PORT=${N8N_PORT:-5678}
+      - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
+
+      # AWS Bedrock Credentials (from .env)
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION:-eu-central-1}
+
+      # IMAP Integration (optional)
+      - IMAP_HOST=${IMAP_HOST:-imap.gmail.com}
+      - IMAP_PORT=${IMAP_PORT:-993}
+      - IMAP_USER=${IMAP_USER}
+      - IMAP_PASS=${IMAP_PASS}
+
+      # Slack Integration (optional)
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+      - SLACK_CHANNEL_VERTRIEB=${SLACK_CHANNEL_VERTRIEB:-#vertrieb}
+      - SLACK_CHANNEL_SUPPORT=${SLACK_CHANNEL_SUPPORT:-#support}
+      - SLACK_CHANNEL_HR=${SLACK_CHANNEL_HR:-#hr}
+      - SLACK_CHANNEL_BUCHHALTUNG=${SLACK_CHANNEL_BUCHHALTUNG:-#buchhaltung}
+
+    volumes:
+      # n8n data persistence
+      - n8n_data:/home/node/.n8n
+
+      # Workflow and test email mounts (read-only)
+      - ./workflows:/workflows:ro
+      - ./test-emails:/test-emails:ro
+
+    networks:
+      - email-classification-net
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5678/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  n8n_data:
+    driver: local
+
+networks:
+  email-classification-net:
+    driver: bridge
